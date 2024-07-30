@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link data-trunk rel="copy-file" href="web_site.css" />
+    <link data-trunk rel="copy-file" href="pages.css" />
+    <link data-trunk rel="copy-dir" href="images" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="web_site.css">
+    <link rel="stylesheet" href="pages.css">
+  </head>
+  <body>
+    <script>
+      function set_body() {
+        document.body.style.height = window.innerHeight+"px";
+        console.log("window h "+ window.innerHeight);
+        console.log("body h "+ document.body.clientHeight);
+      }
+      window.onresize = set_body;
+    </script>
+  </body>
+</html>
